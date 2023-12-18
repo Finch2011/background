@@ -15,6 +15,7 @@
     <header>
       <h2>background genarator</h2>
       <div class="l">
+        <button onclick="sigin()" id="sigin-in">ورود</button>
         <div class="dropdown">
           <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
             aria-expanded="false" id="b">
@@ -26,11 +27,15 @@
             <li><a class="dropdown-item" href="#">نحوه ی استفاده</a></li>
           </ul>
         </div>
+        </div>
     </header>
     <section class="color">
       <div class="background">
         <input type="color" id="color1" value="#fff">
         <input type="color" id="color2" value="#000">
+        <div class="background2">
+
+        </div>
       </div>
       <p> current bg : background-image: linear-gradient(to right, <span id="showcolor1">#000</span> , <span
           id="showcolor2">#000</span> );</p>
@@ -62,9 +67,26 @@
         bg
       </div>
     </footer>
+    <div id="div2">
+      <h1>sigin in</h1>
+      <input id="email" type="text" placeholder="Enter Your Email ...">
+      <div class="row-password">
+      <input id="password" type="password" placeholder="Enter Your Password ... ">
+      <img  src="./src/eye.svg" alt="">
+      </div>
+      <div class="row-password">
+      <input id="r-password" type="password" placeholder="repetition Password ... ">
+      <img  src="./src/eye.svg" alt="">
+      </div>
+      <button onclick="submit()" id="submit">submit</button>
+      <div id="div3">
+
+      </div>
+   </div>
     <script src="./src/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
   </main>
+  
 </body>
 
 </html>

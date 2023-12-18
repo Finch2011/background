@@ -11,8 +11,10 @@
     src: url(./IRAN\ Kharazmi\ -\ Copy.wff2);
 }
 body {
-    background-image: linear-gradient(to right, #fe0000, #006aff);
+    background-color: black ;
     padding-top: 50px;
+    position: relative;
+    color: white;
 }
 
 header {
@@ -70,33 +72,24 @@ p {
     width: 350px;
     height: 200px;
     background-image: linear-gradient(to right,rgb(0, 255, 132),rgb(0, 119, 255));
+    padding: 10px;
 }
 
-.p1:hover:before{
-    content: "current bg : background-image: linear-gradient(to right, #e5e5e50 , #fe0000 );";
-
-}
 
 .p2{
     width: 350px;
     height: 200px;
     background-image: linear-gradient(to right,rgb(128, 0, 2),rgb(60, 0, 255));
+    padding: 10px;
 }
 
-.p2:hover:before{
-    content: "current bg : background-image: linear-gradient(to right, #e043e000 , #r6400 );";
-
-}
 .p3{
     width: 350px;
     height: 200px;
     background-image: linear-gradient(to right,rgb(234, 0, 255),rgb(0, 195, 255));
+    padding: 10px;
 }
 
-.p3:hover:before{
-    content: "current bg : background-image: linear-gradient(to right, #75757500 , #0820 );";
-
-}
 .hestory{
     margin-top: 80px;
     display: flex;
@@ -128,6 +121,7 @@ footer{
     border-top-left-radius: 37%;
     border-bottom-right-radius:37% ;
     background-color: #fff;
+    color: black;
 }
 
 
@@ -144,6 +138,9 @@ color: white;
 font-size: 20px;
 
 }
+#b{
+    display: none;
+}
 .l{
 display: flex;
 justify-content: space-between;
@@ -155,4 +152,55 @@ header .l button:hover{
 background-image: linear-gradient(to right, #fe0000, #006aff);
 cursor: pointer;
 color: white;
+}
+#div2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width:500px;
+    height: max-content;
+    align-items: center;
+    padding: 100px;
+    border-radius: 14px ;
+    background-color: white ;
+    color: black;
+   content: "";
+   position: absolute;
+   box-shadow: 14px 14px 100px gray;
+    font-family: monospace;
+    position: absolute;
+    content: "";
+    top: -600px;
+    left: 540px; 
+    transition: all 2s;
+}
+#email{
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+    border: .5px solid gray;
+    padding: 5px;
+    outline: none;
+}
+#password , #r-password{
+    border: none;
+    outline: none;
+}
+button{
+    background-image: linear-gradient(to right, #fe0000, #006aff);
+    width: 140px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-family: monospace;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+.row-password{
+    display: flex;
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+    border: .5px solid gray;
+    padding: 5px;
 }
