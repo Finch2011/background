@@ -15,7 +15,7 @@
     <header>
       <h2>background genarator</h2>
       <div class="l">
-        <button onclick="sigin()" id="sigin-in">ورود</button>
+        <button onclick="sigin()" id="sigin-in">sgin in</button>
         <div class="dropdown">
           <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
             aria-expanded="false" id="b">
@@ -45,9 +45,19 @@
     </section>
     <hr class="b">
     <section class="hestory">
-      <div class="p1"></div>
-      <div class="p2"></div>
-      <div class="p3"></div>
+      <div class="p1">
+         <h5>ساخت ترکیب رنگی خودتان را شروع کنید </h5>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto id natus fuga cupiditate perspiciatis nihil illo culpa </p>
+      </div>
+      <div class="p2">
+        <h5>این سایت کاملا رایگان ساخت رنگ را انجام میدهد</h5>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto id natus fuga cupiditate perspiciatis nihil illo culpa </p>
+      </div>
+      <div class="p3">
+        <h5>شروع کنید</h5>
+        <br>
+        <button onclick="sigin()">sgin in</button>
+      </div>
     </section>
     <br>
     <br>
@@ -72,11 +82,11 @@
       <input id="email" type="text" placeholder="Enter Your Email ...">
       <div class="row-password">
       <input id="password" type="password" placeholder="Enter Your Password ... ">
-      <img  src="./src/eye.svg" alt="">
+      <img id="eye" onclick="eyeShow()" src="./src/eye-slash.svg" alt="">
       </div>
       <div class="row-password">
       <input id="r-password" type="password" placeholder="repetition Password ... ">
-      <img  src="./src/eye.svg" alt="">
+      <img onclick="eyeShow2()" id="eye2"  src="./src/eye-slash.svg" alt="">
       </div>
       <button onclick="submit()" id="submit">submit</button>
       <div id="div3">
