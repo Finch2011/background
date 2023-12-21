@@ -105,7 +105,15 @@ p {
     align-items: center;
     position: relative;
 }
+.hestory2{
+    display: flex;
 
+}
+.p4 , .img{
+    width: 350px;
+    height: 250px;
+    border-radius: 10px;
+}
 .b{
     border: 2px solid white;
     margin-top: 20px;
@@ -167,6 +175,7 @@ font-size: 20px;
     top: -700px;
     left: 540px; 
     transition: all 2s;
+    
 }
 #email{
     width: 250px;

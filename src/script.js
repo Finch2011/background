@@ -22,6 +22,7 @@ const rpassword = document.getElementById('r-password')
 //
 //Element for sign in
 const siginin = document.getElementById('sigin-in')
+const siginin2 = document.getElementById('sigin-in2')
 const button = document.getElementById('b')
 const eye = document.getElementById('eye')
 const eye2 = document.getElementById('eye2')
@@ -31,10 +32,17 @@ const divn = document.querySelector(".background2")
 //
 // change color by input
 function action(){
+    if(button.style.display != "flex"){
+        showcolor1.innerHTML=  `<p style = "color:red;">!اول وارد شوید</p>`
+        showcolor2.innerHTML=  `<p style = "color:red;">!اول وارد شوید</p>`
+
+    }
+    else{
     body.style.background =
     "linear-gradient(to right ,"+ color1.value +","+ color2.value+")";
     showcolor1.innerHTML = color1.value
     showcolor2.innerHTML = color2.value
+    }
     
 };
 
@@ -64,23 +72,30 @@ function submit(){
     if(email.value.length == 0 && password.value.length == 0 && rpassword.value.length == 0){
        div2.innerHTML = `<p style="color:red;">!لطفا اطلاعات خواسته شده را وارد کنید</p>`
     }
-    else if(email.value.length <8){
+    else if(email.value.length = 0){
         div2.innerHTML = `<p style="color:red;">!ایمیل خالی است</p>`
     }
-    else if(password.value.length <8){
+    else if(password.value.length = 0 ){
         div2.innerHTML = `<p style="color:red;">!رمز عبور خالی است</p>`
     }
-    else if(rpassword.value.length <8){
+    else if(rpassword.value.length = 0){
         div2.innerHTML = `<p style="color:red;">!رمز عبور را تکرار کنید</p>`
     }
+    else if(email.value.length <8){
+        div2.innerHTML = `<p style="color:red;">!ایمیل کمتر از 8 تا است</p>`
+    }
+    else if(password.value.length <8  ){
+        div2.innerHTML = `<p style="color:red;">!رمز عبور کمتر از 8 تا است</p>`
+    }
+
     else if(password.value != rpassword.value){
         div2.innerHTML = `<p style="color:red;">!رمز عبور با تکرارش مطابقت ندارد</p>`
     }
     else{
-    div.style.top = "-600px"
+    div.style.top = "-700px"
     button.style.display = "flex"
     siginin.style.display = "none"
-    
+    siginin2.style.display = "none"
     }
 }
 //
