@@ -59,6 +59,7 @@ function copy_text(){
     else{
         navigator.clipboard.writeText(color1.value+","+color2.value);
         alert("کپی شد")
+        divn.innerHTML = ""
     }
 }
 //
